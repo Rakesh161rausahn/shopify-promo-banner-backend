@@ -1,0 +1,16 @@
+{
+  "name": "shopify-promo-banner-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Shopify Promo Banner App",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "node api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
