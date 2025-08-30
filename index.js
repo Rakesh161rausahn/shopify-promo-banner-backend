@@ -12,6 +12,8 @@ export default function handler(req, res) {
   }
 
   if (req.method === 'GET') {
+    const baseUrl = `https://${req.headers.host}`;
+    
     res.status(200).json({
       message: "Shopify Promo Banner Backend API",
       status: "running",
@@ -22,7 +24,16 @@ export default function handler(req, res) {
         health: "/api/health", 
         webhooks: "/api/webhooks/uninstalled"
       },
+      links: {
+        "Main API": `${baseUrl}/api`,
+        "Health Check": `${baseUrl}/api/health`,
+        "Webhooks": `${baseUrl}/api/webhooks/uninstalled`
+      },
       documentation: "Visit /api for main API endpoint",
+      usage: {
+        "Test Main API": `curl ${baseUrl}/api`,
+        "Check Health": `curl ${baseUrl}/api/health`
+      },
       timestamp: new Date().toISOString(),
       version: "1.0.0"
     });
