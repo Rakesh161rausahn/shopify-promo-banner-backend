@@ -14,14 +14,14 @@ Deployed on Vercel with serverless functions.
 
 ## Live URLs
 
-- **Production API:** https://shopify-promo-banner-backend-a2vbzk5m7.vercel.app/api
-- **Health Check:** https://shopify-promo-banner-backend-a2vbzk5m7.vercel.app/api/health
+- **Production API:** https://shopify-promo-banner-backend-4m7odf2x8.vercel.app/api
+- **Health Check:** https://shopify-promo-banner-backend-4m7odf2x8.vercel.app/api/health
 
 ## Usage
 
 ```javascript
 // Test the API
-fetch('https://shopify-promo-banner-backend-a2vbzk5m7.vercel.app/api')
+fetch('https://shopify-promo-banner-backend-4m7odf2x8.vercel.app/api')
   .then(response => response.json())
   .then(data => console.log(data));
 ```
