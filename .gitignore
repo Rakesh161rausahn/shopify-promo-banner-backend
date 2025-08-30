@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.local
+.env.production
+.env.staging
+.vercel
+dist/
+build/
+*.log
+.DS_Store
+.vscode/
+.idea/
